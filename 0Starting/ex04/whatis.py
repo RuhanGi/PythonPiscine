@@ -14,4 +14,4 @@ try:
         n = int(sys.argv[1])
         print("I'm Odd." if n % 2 else "I'm Even.")
 except AssertionError as msg:
-    print("AssertionError:", msg)
+    print("AssertionError: ", msg)
