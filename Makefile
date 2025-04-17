@@ -5,4 +5,9 @@ checks:
 	flake8
 
 clean:
-	rm -rf */*/__pycache__
+	rm -rf */*/*/__pycache__
+
+gpush:
+	git add .
+	git commit -m ex06
+	git push
