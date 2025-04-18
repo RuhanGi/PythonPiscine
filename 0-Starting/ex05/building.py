@@ -12,8 +12,8 @@ def main():
         if len(sys.argv) == 1 or sys.argv[1] in [None, ""]:
             try:
                 line = input("What is the text to count?\n")
-            except:
-                print("Enter text to read!")
+            except Exception as e:
+                print("No text found! " + str(e))
                 sys.exit(0)
         else:
             line = sys.argv[1]

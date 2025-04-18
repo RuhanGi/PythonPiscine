@@ -1,21 +1,21 @@
 import sys
+from ft_filter import ft_filter
 
 
 def main():
     """
-    This is the main function that drives the program.
+    A program that accepts two arguments: a string(S), and an integer(N).
+    Outputs a list of words from S that have a length greater than N.
     """
 
     try:
-        assert len(sys.argv) == 3, "more two arguments required"
-        assert N = sys.argv[2], "second argument must be an integer"
-        
+        assert len(sys.argv) == 3, "the arguments are bad"
+        assert sys.argv[2].isdigit(), "the arguments are bad"
         strs = sys.argv[1].split()
-        checkLen = lambda string, n: len(string) > n
-        print(a for a in strs if checkLen(a, N))
-        
-    except AssertionError as msg:
-        print("AssertionError: ", msg)
+        N = int(sys.argv[2])
+        print([w for w in ft_filter(lambda string: len(string) > N, strs)])
+    except AssertionError as e:
+        print("AssertionError: " + str(e))
 
 
 if __name__ == "__main__":
