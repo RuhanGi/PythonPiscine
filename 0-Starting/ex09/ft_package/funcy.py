@@ -1,4 +1,7 @@
 def count_in_list(lst, item):
+    """
+    Count items in lst
+    """
     return lst.count(item)
 
 
@@ -31,6 +34,9 @@ is true. If function is None, return the items that are true.
 
 
 def NULL_not_found(object: any) -> int:
+    """
+    Check NULL type
+    """
     if object is None:
         print(f"Nothing: {object} <class 'NoneType'>")
     elif isinstance(object, float) and object != object:
@@ -45,16 +51,3 @@ def NULL_not_found(object: any) -> int:
         print("Type not Found")
         return 1
     return 0
-
-
-def all_thing_is_obj(object: any) -> int:
-    type_map = {list: "List", tuple: "Tuple", set: "Set", dict: "Dict"}
-    obj_type = type(object)
-
-    if obj_type in type_map:
-        print(f"{type_map[obj_type]} : {obj_type}")
-    elif obj_type == str:
-        print(f"{object} is in the kitchen : <class 'str'>")
-    else:
-        print("Type not found")
-    return 42

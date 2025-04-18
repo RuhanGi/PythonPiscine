@@ -2,6 +2,10 @@ import sys
 
 
 def check(line):
+    """
+    Checks to ensure all characters are valid characters
+    Only alphanumeric and spaces
+    """
     return all(c.isalnum() or c.isspace() for c in line)
 
 
