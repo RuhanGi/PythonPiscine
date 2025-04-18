@@ -11,7 +11,7 @@ clean:
 
 gpush: clean
 	git add .
-	git commit -m draftfinish
+	git commit -m Arrays
 	git push
 
 f:
