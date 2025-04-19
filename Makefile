@@ -11,7 +11,7 @@ clean:
 
 gpush: clean
 	git add .
-	git commit -m divonly
+	git commit -m DataTables
 	git push
 
 f:
