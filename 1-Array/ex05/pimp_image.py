@@ -42,7 +42,10 @@ def ft_grey(array) -> list:
     """
     Takes the grayscale of the image received.
     """
-    gray = (0.2989 * array[:, :, 0] +
-            0.5870 * array[:, :, 1] +
-            0.1140 * array[:, :, 2]).astype(np.uint8)
-    return np.stack((gray,) * 3, axis=-1)
+    gray = array.mean(axis=2).astype(np.uint8)
+    h, w = gray.shape
+    out = np.zeros((h, w, 3), dtype=np.uint8)
+    out[:, :, 0] = gray
+    out[:, :, 1] = gray
+    out[:, :, 2] = gray
+    return out

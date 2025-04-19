@@ -11,7 +11,7 @@ clean:
 
 gpush: clean
 	git add .
-	git commit -m Arrays
+	git commit -m divonly
 	git push
 
 f:
