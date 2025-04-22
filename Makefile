@@ -11,7 +11,7 @@ clean:
 
 gpush: clean
 	git add .
-	git commit -m OOPend
+	git commit -m DoD
 	git push
 
 f:
