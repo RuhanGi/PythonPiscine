@@ -6,7 +6,7 @@ class Character(ABC):
     @abstractmethod
     def __init__(self, name, is_alive=True):
         """Your docstring for Constructor"""
-        self.name = name
+        self.first_name = name
         self.is_alive = is_alive
 
     def die(self):
