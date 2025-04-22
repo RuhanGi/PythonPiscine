@@ -11,7 +11,7 @@ clean:
 
 gpush: clean
 	git add .
-	git commit -m DataTables
+	git commit -m OOPstart
 	git push
 
 f:
