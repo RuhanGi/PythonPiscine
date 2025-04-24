@@ -15,9 +15,8 @@ class Student:
     surname: str
     active: bool = True
     login: str = field(init=False)
-    id: str = field(init=False)
+    id: str = field(init=False, default_factory=generate_id)
 
     def __post_init__(self):
         """Your docstring for Post Initialization"""
         self.login = (self.name[0] + self.surname).capitalize()
-        self.id = generate_id()

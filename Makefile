@@ -11,7 +11,7 @@ clean:
 
 gpush: clean
 	git add .
-	git commit -m OOPdocs
+	git commit -m DoDoptimize
 	git push
 
 f:
