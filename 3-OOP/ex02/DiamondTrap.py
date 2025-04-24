@@ -9,15 +9,19 @@ class King(Baratheon, Lannister):
         super().__init__(name, is_alive)
 
     def get_eyes(self):
+        """Getter"""
         return self.eyes
 
     def get_hairs(self):
+        """Getter"""
         return self.hairs
 
     def set_eyes(self, e):
+        """Setter"""
         self.eyes = e
 
     def set_hairs(self, h):
+        """Setter"""
         self.hairs = h
 
     def __str__(self):
