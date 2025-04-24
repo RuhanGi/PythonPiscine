@@ -40,4 +40,5 @@ class Lannister(Character):
 
     @classmethod
     def create_lannister(cls, name, is_alive=True):
+        """Belongs to class to create an instance"""
         return cls(name, is_alive)
